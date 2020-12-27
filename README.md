@@ -2,7 +2,10 @@
 
 - A simple package to get data from OPEN APIs for your test projects or exp projects. No need to remember the URLS.
 
-- A common way to distribute is to - `source archive` and `wheels`
+
+# Functions
+- `from pyfree import FreeAPI` 
+- `FreeAPI.get_bank_details('SBIN0012345')` - to get bank details
 
 # How to create a PyPi package and Host it on pyPi server
 - READ kro yeh - https://packaging.python.org/tutorials/packaging-projects/ 
@@ -15,6 +18,8 @@
 6. It should be uploaded and follow the steps that you see after upload to test or install your package in local.
 7. You have successfully installed and uploaded package to TestPypi. Follow the same steps for `https://pypi.org/account/register/`
 
+
+- A common way to distribute is to - `source archive` and `wheels`
 
 # create your own pypi local server
 - I will use `~/packages folder as my storage. Feel free to change it`
