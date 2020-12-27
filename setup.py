@@ -14,6 +14,8 @@ setuptools.setup(
     url="https://github.com/rayvikram/pyfree",
     # packages=setuptools.find_packages(),
     packages=["pyfree"],
+
+    # this is used to include files that are defined in MANIFEST.in
     # include_package_data=True
     classifiers=[
         "Programming Language :: Python :: 3",
