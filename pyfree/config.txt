@@ -1,0 +1,4 @@
+# config.txt
+
+[google]
+url = http://google.com
