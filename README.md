@@ -1,4 +1,4 @@
-# pyfree
+# pyfree - https://pypi.org/project/pyfree
 
 - A simple package to get data from OPEN APIs for your test projects or exp projects. No need to remember the URLS.
 
