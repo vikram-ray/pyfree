@@ -16,10 +16,27 @@
 7. You have successfully installed and uploaded package to TestPypi. Follow the same steps for `https://pypi.org/account/register/`
 
 
+# create your own pypi local server
+- I will use `~/packages folder as my storage. Feel free to change it`
+
+1. Follow the above steps and create your own package
+2. activate your virtual env 
+3. `mkdir ~/packages`
+4. `pip install pypiserver`
+5. `mv dist/pyfree-0.0.3.tar.gz ~/packages` 
+6. `pypi-server -p 8080 ~/packages`
+7. `visit localhost:8000` to see your packages
+8. `pip install --index-url http://localhost:8080/simple/ pyfree` - to install pyfree from your own local PYpI server.
+## create a private Pypi repo or detailed instruction? 
+- https://www.linode.com/docs/guides/how-to-create-a-private-python-package-repository/
+
 
 # files
 - `setup.py` - setup.py is the build script for setuptools. It tells setuptools about your package (such as the name and version) as well as which code files to include
+- `setup.cfg` - a configuration for `setup.py`. More at - https://stackoverflow.com/questions/39484863/whats-the-difference-between-setup-py-and-setup-cfg-in-python-projects and https://docs.python.org/3/distutils/configfile.html
+- `.pypirc` - A .pypirc file allows you to define the configuration for package indexes (referred to here as “repositories”), so that you don’t have to enter the URL, username, or password whenever you upload a package with twine or flit. - https://packaging.python.org/specifications/pypirc/. (we place it in ~/.pypirc) (after adding it i just had to do twine upload and it take token and other credential from HOME/.pyprc file)
 - `MANIFEST.in` - a file where we list all the extra file that needs to be included 
+- `__main__.py` and `entrypoint` in setup.py - It enables excution of the __main__ file with the module name directly with `-m` flag. Eg - `python -m pyfree` will execute content of `main` inside `__main__.py` file
 
 ## setuptools
 - setuptools (which includes easy_install) is a collection of enhancements to the Python distutils that allow you to more easily build and distribute Python distributions, especially ones that have dependencies on other packages.

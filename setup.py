@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/rayvikram/pyfree",
     # packages=setuptools.find_packages(),
-    packages=["pyfree"]
+    packages=["pyfree"],
     # include_package_data=True
     classifiers=[
         "Programming Language :: Python :: 3",
