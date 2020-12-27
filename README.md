@@ -19,23 +19,8 @@
 7. You have successfully installed and uploaded package to TestPypi. Follow the same steps for `https://pypi.org/account/register/`
 
 
+# notes
 - A common way to distribute is to - `source archive` and `wheels`
-
-# create your own pypi local server
-- I will use `~/packages folder as my storage. Feel free to change it`
-
-1. Follow the above steps and create your own package
-2. activate your virtual env 
-3. `mkdir ~/packages`
-4. `pip install pypiserver`
-5. `mv dist/pyfree-0.0.3.tar.gz ~/packages` 
-6. `pypi-server -p 8080 ~/packages`
-7. `visit localhost:8000` to see your packages
-8. `pip install --index-url http://localhost:8080/simple/ pyfree` - to install pyfree from your own local PYpI server.
-## create a private Pypi repo or detailed instruction? 
-- https://www.linode.com/docs/guides/how-to-create-a-private-python-package-repository/
-
-
 # files
 - `setup.py` - setup.py is the build script for setuptools. It tells setuptools about your package (such as the name and version) as well as which code files to include
 - `setup.cfg` - a configuration for `setup.py`. More at - https://stackoverflow.com/questions/39484863/whats-the-difference-between-setup-py-and-setup-cfg-in-python-projects and https://docs.python.org/3/distutils/configfile.html
