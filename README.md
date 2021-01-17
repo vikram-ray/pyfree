@@ -2,6 +2,8 @@
 
 - A simple package to get data from OPEN APIs for your test projects or exp projects. No need to remember the URLS.
 
+# TODO
+- [x] - add github workflow to update package in pypi
 
 # Functions
 - `from pyfree import FreeAPI` 
