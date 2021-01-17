@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pyfree", 
-    version="0.0.1",
+    version="1.0.0",
     author="Vikram Ray",
     author_email="vik8876@gmail.com",
     description="A lib for free APIs",
@@ -16,7 +16,7 @@ setuptools.setup(
     packages=["pyfree"],
 
     # this is used to include files that are defined in MANIFEST.in
-    # include_package_data=True
+    include_package_data=True
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
