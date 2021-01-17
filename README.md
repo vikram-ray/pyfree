@@ -17,6 +17,7 @@
 5. Upload to test-PYpi using twine. (install twine if not installed) .  `OPTIONAL - twine check dist/*` and `twine upload --repository testpypi dist/*`
 6. It should be uploaded and follow the steps that you see after upload to test or install your package in local.
 7. You have successfully installed and uploaded package to TestPypi. Follow the same steps for `https://pypi.org/account/register/`
+8. To update, change version in `__init__.py and setup.py`, run 3&5 command. If getting `400` error, remove build and dist folder, as twine will try to upload the existing versions also.
 
 
 # notes

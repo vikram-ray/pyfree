@@ -16,7 +16,7 @@ setuptools.setup(
     packages=["pyfree"],
 
     # this is used to include files that are defined in MANIFEST.in
-    include_package_data=True
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
